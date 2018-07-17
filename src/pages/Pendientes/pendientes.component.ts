@@ -1,12 +1,13 @@
 import {Component} from '@angular/core';
+import {ListaDeseosService} from '../../app/services/lista-deseo.service'
 
 @Component({
     selector: 'app-pendientes',
     templateUrl: 'pendientes.component.html'
 })
-export class PendientesComponent{
+export class PendientesComponent {
     
-    constructor(){
+    constructor(private _listaDeseos: ListaDeseosService){
 
     }
 }
