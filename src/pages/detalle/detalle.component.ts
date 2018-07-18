@@ -29,7 +29,7 @@ export class DetalleComponent implements OnInit {
     ngOnInit() { }
 
     actualizar(item:ListaItem){
-
+        
         item.completado = !item.completado;
 
         let todosMarcados = true;
@@ -39,11 +39,12 @@ export class DetalleComponent implements OnInit {
                break;
             }
         }
-        this.lista.terminado = todosMarcados;
+        this.lista.terminada = todosMarcados;
 
         this._listaDeseos.actualizarData()
 
     }
+
     borrarItem(){
 
         const confirm = this.alertCtrl.create({
