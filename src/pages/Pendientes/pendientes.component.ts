@@ -3,6 +3,7 @@ import {ListaDeseosService} from '../../app/services/lista-deseo.service'
 
 import {NavController} from 'ionic-angular'
 import { AgregarComponent } from '../agregar/agregar.component';
+import { DetalleComponent } from '../detalle/detalle.component';
 
 
 @Component({
@@ -18,5 +19,12 @@ export class PendientesComponent {
 
     irAgregar(){
         this.navCotroller.push(AgregarComponent);
+    }
+
+    verDetalle( lista, idx){
+        this.navCotroller.push(DetalleComponent, {
+            lista: lista,
+            idx: idx
+        } );
     }
 }

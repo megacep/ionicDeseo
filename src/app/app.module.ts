@@ -15,6 +15,7 @@ import { AgregarComponent } from '../pages/agregar/agregar.component';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PlaceholderPipe } from './pipes/placeholder.pipe';
+import { DetalleComponent } from '../pages/detalle/detalle.component';
 
 
 
@@ -26,7 +27,8 @@ import { PlaceholderPipe } from './pipes/placeholder.pipe';
     PendientesComponent,
     TerminadosComponent,
     AgregarComponent,
-    PlaceholderPipe
+    PlaceholderPipe,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
@@ -39,6 +41,7 @@ import { PlaceholderPipe } from './pipes/placeholder.pipe';
     PendientesComponent,
     TerminadosComponent,
     AgregarComponent,
+    DetalleComponent
     
   ],
   providers: [

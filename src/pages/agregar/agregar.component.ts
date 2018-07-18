@@ -63,7 +63,7 @@ export class AgregarComponent implements OnInit {
 
         lista.items = this.items;
 
-        this._deseoService.listas.push(lista);        
+        this._deseoService.agregarLista(lista);        
 
         this.navCtrl.pop();
 
